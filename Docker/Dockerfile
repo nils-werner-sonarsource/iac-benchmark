@@ -1,12 +1,3 @@
-# This file defines how the Docker container for Liddle is built. This is
-# noteworthy as this is what will pushed to Micros upon deployment.
-#
-# NB. Whilst many of these commands could be stacked in order to reduce the
-# number of layers the Docker container has in the build process, this is
-# intentionally avoided as Docker will use cached layers rather than rebuilding
-# them if no changes to that layer are detected. This means a faster build
-# time!
-
 FROM node:8.4.0
 FROM python:3
 
