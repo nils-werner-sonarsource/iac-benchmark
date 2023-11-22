@@ -10,6 +10,7 @@ param allowedLocations array = [
   'australiacentral'
 ]
 
+@description('test')
 var policyDefinitionName = 'LocationRestriction'
 resource policyDef 'Microsoft.Authorization/policyDefinitions@2020-09-01' = {
   name: policyDefinitionName
